@@ -90,14 +90,19 @@ footer a {
 
 .form-row {
     display: flex;
+    gap: 7vh;
 }
 
-input {
-    width: 200px;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+.form-element {
+    position: relative;
 }
+
+form label {
+    position: absolute;
+    bottom: 2vh;
+    font-size: 0.75rem;
+}
+
 
 .form-footer {
     display: flex;
