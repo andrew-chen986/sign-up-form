@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Roboto:wght@300&display=swap');
+
 @font-face {
     font-family: "Norse";
     src: url("Norse-Bold.woff") format("woff");
@@ -9,25 +11,70 @@
 }
 
 .body-container {
-    font-family: "Norse";
     display: flex;
+    gap: 40px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .left-container {
     display: flex;
+    position: relative;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url("plant.jpg");
-    width: 30%;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    text-align: center;
+    width: auto;
+}
+
+.left-container img {
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.odin-logo {
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    height: 20vh;
+    background: rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 5rem;
+}
+
+.odin-logo img {
+    width: auto;
+    height: 100%;
+}
+
+.odin-logo::after {
+    color: white;
+    font-family: "Norse";
+    content: "ODIN";
 }
 
 footer {
-    margin-top: auto;
-    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+footer a {
+    color: white;
+}
+
+.form-header {
+    padding-top: 15vh;
 }
 
 form {
+    box-sizing: border-box;
+    background-color: white;
+    padding-right: 200px;
     max-width: 70%;
 }
